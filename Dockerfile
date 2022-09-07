@@ -23,7 +23,7 @@
 FROM --platform=$BUILDPLATFORM tonistiigi/xx AS xx
 
 #FROM golang:1.18-alpine as builder
-FROM --platform=$BUILDPLATFORM golang:1.18-alpine as builder
+FROM --platform=$BUILDPLATFORM golang:1.19.1-alpine as builder
 # copy xx scripts to your build stage
 COPY --from=xx / /
 ARG BUILDPLATFORM TARGETOS TARGETARCH TARGETPLATFORM
