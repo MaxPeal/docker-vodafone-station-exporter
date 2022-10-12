@@ -326,7 +326,7 @@ jobs:
         #if: runner.os == 'macOS'
         if: ${{ runner.os == 'macOS' || runner.os == 'Linux' || runner.os != 'Windows' }}
         id: qemu
-        uses: docker/setup-qemu-action@v2.0.0
+        uses: docker/setup-qemu-action@v2.1.0
         with:
           platforms: all
 
