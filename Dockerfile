@@ -84,7 +84,7 @@ RUN    XX_DEBUG_VERIFY=foo xx-verify vodafone-station-exporter
 ## # GODEBUG=gocachehash=1 go build -v "fmt"
 ## # xx-verify --static vodafone-station-exporter
 
-FROM alpine:3.16
+FROM alpine:3.17
 WORKDIR /app
 #RUN apk --no-cache add file ldd
 RUN apk add file scanelf elfutils patchelf
