@@ -263,7 +263,7 @@ jobs:
           docker system info
       - name: Cache Homebrew
         id: brew-cache
-        uses: actions/cache@v3.0.4
+        uses: actions/cache@v3.2.5
         with:
           path: |
             $HOME/Library/Caches/Homebrew
@@ -410,7 +410,7 @@ jobs:
     
       - name: Cache Docker layers
         id: buildx-cache
-        uses: actions/cache@v3.0.4
+        uses: actions/cache@v3.2.5
         with:
           path: /tmp/.buildx-cache
           # key: ${{ runner.os }}-buildx-${{ github.sha }}-${{ github.run_id }}
